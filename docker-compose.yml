@@ -2,9 +2,8 @@
 version: "3.7"
 services:
   control:
-    build:
-      context: .
-      dockerfile: samples/01_control/Dockerfile
+    image: "debian:buster-slim"
+    command: "id"
   dockerfile_user:
     build:
       context: .
