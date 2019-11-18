@@ -5,3 +5,7 @@ services:
     build:
       context: .
       dockerfile: control/Dockerfile
+  dockerfile_user:
+    build:
+      context: .
+      dockerfile: dockerfile_user/Dockerfile
