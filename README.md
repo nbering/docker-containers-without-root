@@ -2,43 +2,9 @@
 Playing with some different ways of running docker containers without using root continuously.
 
 # Samples
-## Control
 
-Like any good scientific experiment, we need a Control case. In this case, it's
-a simple(ish) multi-phase container build. First, we compile a tiny little Go-lang
-app. It just outputs some raw info about the current user - inside the container - and exits.
-
-Then, we create our actual Control image. It's a basic busybox image with our 
-"app" copied from the go-lang build image.
-
-To run the test case:
-
-```sh
-docker-compose build control
-
-docker-compose run --rm control
-```
-
-Sample output:
-```
-2019/11/17 23:31:20 &{0 0 root root /root}
-```
-
-## Dockerfile User
-
-In this sample, we set the user to "nobody", which is a user pre-configured in
-the "busybox" base image.
-
-```sh
-docker-compose build dockerfile_user
-
-docker-compose run --rm dockerfile_user
-```
-
-Sample output:
-```
-2019/11/17 23:55:51 &{65534 65534 nobody nobody /home}
-```
+1. [Control](./samples/01_control/README.md)
+2. [Dockerfile User](./samples/02_dockerfile_user/README.md)
 
 ## TODO
 ### Dropping Permissions

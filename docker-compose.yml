@@ -4,8 +4,8 @@ services:
   control:
     build:
       context: .
-      dockerfile: control/Dockerfile
+      dockerfile: samples/01_control/Dockerfile
   dockerfile_user:
     build:
       context: .
-      dockerfile: dockerfile_user/Dockerfile
+      dockerfile: samples/02_dockerfile_user/Dockerfile
