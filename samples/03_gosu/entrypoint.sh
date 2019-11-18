@@ -1,7 +1,7 @@
 #!/bin/sh
 
 echo "-- Still have root here, could be used for setup --"
-/bin/app
+id
 
 echo "--- Giving up root... ---"
-exec gosu nobody /bin/app
+exec gosu nobody ps aux
