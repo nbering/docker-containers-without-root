@@ -9,3 +9,7 @@ services:
     build:
       context: .
       dockerfile: samples/02_dockerfile_user/Dockerfile
+  gosu:
+    build:
+      context: .
+      dockerfile: samples/03_gosu/Dockerfile
