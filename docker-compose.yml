@@ -12,3 +12,7 @@ services:
     build:
       context: .
       dockerfile: samples/03_gosu/Dockerfile
+  add_user:
+    build:
+      context: .
+      dockerfile: samples/04_add_user/Dockerfile
