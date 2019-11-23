@@ -16,3 +16,10 @@ services:
     build:
       context: .
       dockerfile: samples/04_add_user/Dockerfile
+  mount_etc_passwd:
+    image: "debian:buster-slim"
+    command: "id"
+    user: "999:999"
+    volumes:
+      - "./samples/05_mount_etc_passwd/passwd:/etc/passwd:ro"
+      - "./samples/05_mount_etc_passwd/group:/etc/group:ro"

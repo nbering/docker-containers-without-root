@@ -7,6 +7,7 @@ Playing with some different ways of running docker containers without using root
 2. [Dockerfile User](./samples/02_dockerfile_user/README.md)
 3. [gosu](./samples/03_gosu/README.md)
 4. [Add User](./samples/04_add_user/README.md)
+5. [Mount /etc/password](./samples/05_mount_etc_password/README.md)
 
 ## TODO
 ### Dropping Permissions
@@ -19,7 +20,7 @@ Playing with some different ways of running docker containers without using root
   - [`usermod`](https://manpages.debian.org/buster/passwd/usermod.8.en.html)
   - [`groupadd`](https://manpages.debian.org/buster/passwd/groupadd.8.en.html)
   - [`groupmod`](https://manpages.debian.org/buster/passwd/groupmod.8.en.html)
-- [ ] Read-only mounts of `/etc/passwd`
+- [x] Read-only mounts of `/etc/passwd`
 - [ ] Using [nss_wrapper](https://cwrap.org/nss_wrapper.html) to fake local users and/or remote hosts
 - [ ] Manipulating filesystem permissions on container start
 
