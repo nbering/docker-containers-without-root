@@ -7,7 +7,7 @@ Playing with some different ways of running docker containers without using root
 2. [Dockerfile User](./samples/02_dockerfile_user/README.md)
 3. [gosu](./samples/03_gosu/README.md)
 4. [Add User](./samples/04_add_user/README.md)
-5. [Mount /etc/password](./samples/05_mount_etc_password/README.md)
+5. [Mount /etc/password](./samples/05_mount_etc_passwd/README.md)
 
 ## TODO
 ### Dropping Permissions
